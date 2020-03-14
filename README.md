@@ -9,13 +9,14 @@
 
 # Simple Development Guide
 ## Before to start
-- Before, you must locate the folder where you want the repository
+- You must have installed NodeJS and Github in your machine.
+- You must locate the folder where you want the repository.
 ```sh
   # Clone
   $ git clone https://github.com/jesucluna/MailingJs
   $ cd MailingJs
   # Create React App
-  $ npx create-react-app mailing
+  $ npm install
 ```
 
 ## ReactJs instructions
@@ -33,3 +34,6 @@
 
 ## [1.0.1]
 - `README` updated
+
+## [1.0.2]
+- In `README` options, before to start, changed.
