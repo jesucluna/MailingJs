@@ -1,0 +1,256 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    width: 100%;
+    max-height: 720px;
+    height: auto;
+    overflow: hidden;
+}
+
+.header1{
+    width: 100%;
+	background: #014983;
+	padding: 5px 0;
+	text-align: center;
+    border-bottom: 4px solid #ffc90b;
+}
+
+.logo{
+    width: 127.08px;
+    height: 50px;    
+	vertical-align: middle;
+}
+.main{
+    width: 100%;
+    height:100%;
+    padding-top: 40px;
+    display: block;
+}
+
+.posters{
+    width:100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.guason{
+    width: 100%;    
+    margin-left: 17.5%; /*Aqui cambio el margen para que este poster se vea más a la izquierda
+    con respecto a los otros*/   
+}
+.guason img{
+    position: absolute; /*Esto es lo que me permite que los posters se superpongan y no se vean en
+    bloques, lo hago con cada poster*/
+    width:150px;
+    height: 240px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.5) 0 5px 10px;
+    z-index: -1; /*Dentro de la superposición este sería el ultimo poster, detras de los demas*/
+    margin-top: 20px;
+}
+.guason1{
+    width: 100%;
+    margin-left:37.5%; /*Aqui cambio el margen para que este poster se vea más centrado con 
+    respecto a los otros*/
+}
+
+.guason1 img{
+    
+    position: absolute;
+    width:180px;
+    height: 270px;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,.5) 0 5px 10px;
+    z-index: 1; /*Dentro de la superposición este sería el primer poster, sobre los demas*/
+    
+}
+
+.guason2{
+    width: 100%;
+    margin-left: 57.5%; /*Aqui cambio el margen para que este poster se vea más a la derecha con 
+    respecto a los otros*/
+}
+
+.guason2 img{
+    position: absolute;
+    width:170px;
+    height: 240px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.5) 0 5px 10px;
+    margin-top: 20px;
+
+}
+.score{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stars{
+    font-size: 0;
+    display: inline-block;
+}
+
+.stars a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-size: 3rem;
+    color: #ffc90b;
+}
+
+.stars:hover a{
+    color: #ffc90b;
+}
+
+.stars > a:hover ~ a{
+    color: #888;
+}
+
+.text{
+    font-size: 13px;
+    font-family: Fjalla One, serif;
+}
+
+.time{
+    text-align: center;
+    margin: 0;
+    color:#888;
+}
+.time ul{
+    list-style: none;
+    padding: 0;
+    display: flex; /*Los elementos de la lista no ordenada se ponen uno al lado del otro*/
+    width: 60%;
+    /*Esta parte donde los margenes derechos e izquierdos se hacen auto es para centrar el elemento*/
+    margin-right: auto;
+    margin-left: auto;
+}
+.time ul li{
+    display: block;
+}
+.time li:hover,.time li p:hover{
+    color: black;
+    cursor: pointer;
+}
+.time li p{
+    padding:5px 10px;
+	display: block;
+	text-decoration: none;
+     font-family: Fjalla One, serif;
+}
+
+.time .first{
+    color: black;
+    border-bottom: 4px solid black;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    max-width: 720px;
+    max-height: 720px;
+    margin: 0 auto;
+  	overflow: hidden;
+	  margin-top: 10px;
+}
+.contain{
+	position: relative;
+    width: 100%;
+    background: #014983;
+    border-top: 4px solid #ffc90b; 
+  	padding: 10px 0 19px;
+	display: block;
+    text-align:center;	
+}
+
+.contain ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contain ul li{
+    display: block;
+}
+
+.contain p{
+    color:#fff;
+}
+/*Se ponen las familias de fuentes y se juega con los margenes y tamaños de fuente de cada line 
+para organizar el "No te lo pierdas"*/
+.line1{
+    margin-right: 50%;
+}
+.line1 p{
+    font-size: 40px;
+    font-family: Fjalla One, serif;
+}
+.line2{
+    margin-right: 50%;
+}
+.line2 p{
+    font-size: 20px;
+    font-family: Fjalla One, serif;
+}
+.line3{
+    margin-right: 39%;
+}
+
+.line3 p{
+    font-size: 40px;
+    font-family: Fjalla One, serif;
+}
+a{
+    text-decoration: none;
+}
+/*Parte donde se ponen los iconos sociales, junto a su debido enlace y los copyright*/
+.social{
+    width: 100%;
+    margin-left: 35%; 
+    margin-top: 15%;
+}
+/*En esta parte se la da forma al icono importado desde la api de ajax para conectar con 
+font awesome*/
+i{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+/*Animación cuando pase el cursor sobre el elemento, lo vemos en otros elementos de la pagina*/
+i:hover{
+    cursor: pointer;
+    color:  black;
+}
+
+.info{
+    width: 100%;
+    font-size: 10px;
+    margin-left: 25%; 
+}
+
+/*Parte del @media, donde se juega con los elementos para adaptarlos cuando
+el maximo ancho de pantalla sea el estipulado por mi, segun los estandares*/
+
+@media(max-width:640px){
+    .posters{
+        margin-left: -25px;
+        margin-right: 10px;
+    }
+    .time ul{
+        width: 70%;
+    }
+    .time li p{
+        padding:5px 4px;
+    }
+    .contenido ul{
+        width: 80%;
+    }
+}
